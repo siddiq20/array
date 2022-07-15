@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY EX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>JAVASCRIPT ARRAYS</h1>
+<!--------------------------------CONCAT----------------------------->
+<h2>CONCAT() Method</h2>
+
+<!---------------------------------PUSH------------------------------->
+<p id="demo1"></p>
+<h2>PUSH() Method</h2>
+<p id="demo2"></p>
+
+<!----------------------------------POP--------------------------------> 
+<h2>POP() Method</h2>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+<!----------------------------------SHIFT------------------------------>
+<h2>SHIFT() Method</h2>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<!----------------------------------UNSHIFT---------------------------->
+<h2>UNSHIFT() Method</h2>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<!----------------------------------SPLICE----------------------------->
+<h2>SPLICE() Method</h2>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<!-----------------------------------LENGTH---------------------------->
+<h2>LENGTH() Method</h2>
+<p id="demo11"></p>
+
+</body>
+
+<script>
+const member1 = [ "Siraj", "Sheik"];
+const member2 = [ "Shiham", "Irshath", "Ijaz"];
+
+const company = member1.concat(member2); 
+document.getElementById("demo1").innerHTML = company;
+
+const numbers = [1,2,3,4,5];
+numbers.push(6,7,8);
+numbers.push(9,10);
+document.getElementById("demo2").innerHTML =numbers;
+console.log(numbers);
+
+const interns = ["Siddiq", "Jasim", "Salman", "Muthu"];
+document.getElementById("demo3").innerHTML = interns.pop();
+document.getElementById("demo4").innerHTML = interns;
+
+const employees = ["Abu", "Babu", "Chikkandar", "Dhiwan"];
+document.getElementById("demo5").innerHTML = employees;
+employees.shift();
+document.getElementById("demo6").innerHTML = employees;
+
+const fruits = ["Banana", "Orange", "Lemon", "Mango"];
+document.getElementById("demo7").innerHTML = fruits;
+fruits.unshift("Apple");
+document.getElementById("demo8").innerHTML = fruits;
+
+const vegetables = ["Cucumber", "Tomatto", "Potato", "Brinjal"];
+document.getElementById("demo9").innerHTML = vegetables;
+vegetables.splice(0, 1);
+document.getElementById("demo10").innerHTML = vegetables;
+
+const friends = ["Adhil", "Badhusha", "Sameer", "Arshath", "Jameel","Mydeen","Zaheer"];
+document.getElementById("demo11").innerHTML = friends.length;
+
+</script>
+
+
+</html>
